@@ -8,9 +8,15 @@
     - `1010hpa_60deg/`: 1010 hPa、60°Cでのシミュレーション。
         - `diffusion_growth.f90`: メインのシミュレーションコード。時間経過に伴う液滴半径を計算します。
         - `plot.py`: 結果（`dg.dat`）を可視化するスクリプト。
+    - `compare_to_analytical_solution(ignore_kohler_curve)/`: 解析解との比較（ケーラー曲線を無視）。
+    - `compare_to_tauact_50deg/`: 50°Cでの活性化時間（tau_act）との比較。
+    - `compare_to_tauact_60deg/`: 60°Cでの活性化時間（tau_act）との比較。
+    - `compare_to_tauact_70deg/`: 70°Cでの活性化時間（tau_act）との比較。
+    - `tc_50_change_s/`: 50°Cで飽和度（S）を変化させたシミュレーション。
     - `tc_60_change_s/`: 60°Cで飽和度（S）を変化させたシミュレーション。
         - `diffusion_growth.f90`: メインのシミュレーションコード。
         - `plot.py`: 結果を可視化するスクリプト。
+    - `tc_70_change_s/`: 70°Cで飽和度（S）を変化させたシミュレーション。
 
 - **Kohler_curve**: ケーラー曲線（平衡飽和度 vs 液滴半径）の計算。
     - `1010hpa_60deg/`: 1010 hPa、60°Cでの計算。
